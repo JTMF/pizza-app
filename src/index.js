@@ -33,7 +33,7 @@ function Pizza({pizzaData}) {
 function Menu() {
   const [searchP, setSearchP] = useState("");
   const [filteredPizza, setFilteredP] = useState(pizzaData);
-  const currTime = new Date().getHours() * 100 + new Date().getMinutes(); // Dynamic current time
+  const currTime = new Date().getHours() * 100 + new Date().getMinutes();
 
   const handleInputChange = (e) => {
     const query = e.target.value;
